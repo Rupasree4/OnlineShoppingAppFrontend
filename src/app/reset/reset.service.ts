@@ -9,7 +9,7 @@ import { Reset } from './reset';
 export class ResetService {
   constructor(private http: HttpClient) {}
 
-  public dbUrl = 'http://ec2-54-146-125-133.compute-1.amazonaws.com/api/v1.0/shopping/';
+  public dbUrl = 'http://localhost:8081/api/v1.0/shopping/';
 
   resetPassword(p: Reset): Observable<any> {
     return this.http.post(this.dbUrl + 'reset_password', p, {

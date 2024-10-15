@@ -36,7 +36,7 @@ describe('LoginComponent', () => {
     component.onLogin();
 
     const req = httpTestingController.expectOne(
-      'http://ec2-54-146-125-133.compute-1.amazonaws.com/api/v1.0/shopping/login'
+      'http://localhost:8081/api/v1.0/shopping/login'
     );
     expect(req.request.method).toEqual('POST');
     req.flush({ token: 'fake-token', role: 'ROLE_ADMIN' });
@@ -52,7 +52,7 @@ describe('LoginComponent', () => {
     component.onLogin();
 
     const req = httpTestingController.expectOne(
-      'http://ec2-54-146-125-133.compute-1.amazonaws.com/api/v1.0/shopping/login'
+      'http://localhost:8081/api/v1.0/shopping/login'
     );
     expect(req.request.method).toEqual('POST');
     req.flush({ token: 'fake-token', role: 'ROLE_USER' });
@@ -69,7 +69,7 @@ describe('LoginComponent', () => {
     component.onLogin();
 
     const req = httpTestingController.expectOne(
-      'http://ec2-54-146-125-133.compute-1.amazonaws.com/api/v1.0/shopping/login'
+      'http://localhost:8081/api/v1.0/shopping/login'
     );
     expect(req.request.method).toEqual('POST');
     req.flush('Login failed', { status: 401, statusText: 'Unauthorized' });

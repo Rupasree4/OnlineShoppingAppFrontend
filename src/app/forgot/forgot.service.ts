@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class ForgotService {
   constructor(private http: HttpClient) {}
 
-  public dbUrl = 'http://ec2-54-146-125-133.compute-1.amazonaws.com/api/v1.0/shopping/';
+  public dbUrl = 'http://localhost:8081/api/v1.0/shopping/';
 
   getToken(email: string | any): Observable<any> {
     return this.http.get(`${this.dbUrl}forgot/${email}`, {

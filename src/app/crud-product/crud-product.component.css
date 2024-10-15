@@ -1,5 +1,5 @@
 body {
-  color: #566787;
+  color: #435d7d;
   background: #f5f5f5;
   font-family: "Varela Round", sans-serif;
   font-size: 13px;
@@ -16,7 +16,7 @@ body {
 }
 .table-title {
   padding-bottom: 15px;
-  background: #435d7d;
+  background: #fadb29;
   color: #fff;
   padding: 16px 30px;
   min-width: 100%;
@@ -89,10 +89,10 @@ table.table td a:hover {
   color: #2196f3;
 }
 table.table td a.edit {
-  color: #ffc107;
+  color: #0717ff;
 }
 table.table td a.delete {
-  color: #f44336;
+  color: #f5281a;
 }
 table.table td i {
   font-size: 19px;

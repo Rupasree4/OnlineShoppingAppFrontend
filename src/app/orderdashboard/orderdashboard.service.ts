@@ -11,7 +11,7 @@ export class OrderdashboardService {
 
   constructor(private http: HttpClient) {}
 
-  public dbUrl = 'http://ec2-54-146-125-133.compute-1.amazonaws.com/api/v1.0/shopping/';
+  public dbUrl = 'http://localhost:8081/api/v1.0/shopping/';
 
   getAllOrdersByUser(): Observable<Array<Orderdetails>> {
     return this.http.get<Array<Orderdetails>>(this.dbUrl + 'allorders');

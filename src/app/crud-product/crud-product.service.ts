@@ -9,7 +9,7 @@ import { CrudProduct } from './crud-product';
 export class CrudProductService {
   constructor(private http: HttpClient) {}
 
-  public dbUrl = 'http://ec2-54-146-125-133.compute-1.amazonaws.com/api/v1.0/shopping/';
+  public dbUrl = 'http://localhost:8081/api/v1.0/shopping/';
 
   addProduct(p: CrudProduct): Observable<CrudProduct> {
     return this.http.post<CrudProduct>(this.dbUrl + 'add', p);

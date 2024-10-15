@@ -16,7 +16,7 @@ export class LoginComponent {
 
   onLogin() {
     this.httpClient
-      .post('http://ec2-54-146-125-133.compute-1.amazonaws.com/api/v1.0/shopping/login', this.loginObj)
+      .post('http://localhost:8081/api/v1.0/shopping/login', this.loginObj)
       .subscribe(
         (data: any) => {
           // console.log(data);
